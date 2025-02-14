@@ -170,7 +170,7 @@ extension KeyboardStyle {
         // MARK: - Autocomplete
         
         /// The style to apply to ``Autocomplete/Toolbar`` views.
-        public var autocompleteToolbarStyle: Autocomplete.ToolbarStyle {
+        open var autocompleteToolbarStyle: Autocomplete.ToolbarStyle {
             .standard
         }
         
