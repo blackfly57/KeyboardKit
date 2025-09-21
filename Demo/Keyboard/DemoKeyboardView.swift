@@ -27,7 +27,14 @@ struct DemoKeyboardView: View {
             buttonContent: { $0.view },
             buttonView: { $0.view },
             collapsedView: { $0.view },
-            emojiKeyboard: { $0.view },
+            emojiKeyboard: { params in
+                AIEmojiCategoryKeyboard(selection: .smileysAndPeople,
+                                        actionHandler: services.actionHandler,
+                                        keyboardContext: state.keyboardContext,
+                                        calloutContext: state.calloutContext,
+                                        style: params.style,
+                                        styleProvider: services.styleService)
+            },
             toolbar: { _ in
                 Keyboard.Toolbar {
                     HStack {
@@ -38,33 +45,33 @@ struct DemoKeyboardView: View {
                 }
             }
         )
-
-        // 💡 Customize the style of any keyboard button.
-        .keyboardButtonStyle { params in
-            let context = keyboardContext
-            var style = params.standardStyle(for: context)
-            guard params.action == .backspace else { return style }
-            style.backgroundColor = params.isPressed ? .yellow : .blue
-            return style
-        }
-
-        // 💡 Setup custom callout actions
-        .keyboardCalloutActions { params in                 // Apply custom actions to "K" key
-            if case .character(let char) = params.action, char == "K" {
-                return .init(characters: String("keyboardkit".reversed()))
-            }
-            return params.standardActions(for: keyboardContext)
-        }
-
-        // 💡 Customize the style of the entire keyboard.
-        .keyboardViewStyle(
-            .init(background: .color(.green))
-        )
-
-        // 💡 Customize other custom view styles as well.
-        .keyboardToolbarStyle(
-            .init(backgroundColor: .red)
-        )
+//
+//        // 💡 Customize the style of any keyboard button.
+//        .keyboardButtonStyle { params in
+//            let context = keyboardContext
+//            var style = params.standardStyle(for: context)
+//            guard params.action == .backspace else { return style }
+//            style.backgroundColor = params.isPressed ? .yellow : .blue
+//            return style
+//        }
+//
+//        // 💡 Setup custom callout actions
+//        .keyboardCalloutActions { params in                 // Apply custom actions to "K" key
+//            if case .character(let char) = params.action, char == "K" {
+//                return .init(characters: String("keyboardkit".reversed()))
+//            }
+//            return params.standardActions(for: keyboardContext)
+//        }
+//
+//        // 💡 Customize the style of the entire keyboard.
+//        .keyboardViewStyle(
+//            .init(background: .color(.green))
+//        )
+//
+//        // 💡 Customize other custom view styles as well.
+//        .keyboardToolbarStyle(
+//            .init(backgroundColor: .red)
+//        )
     }
 }
 
@@ -74,26 +81,26 @@ private extension DemoKeyboardView {
     var layout: KeyboardLayout {
         NSLog("Creating a custom layout")
         var layout = KeyboardLayout.standard(for: keyboardContext)
-        guard keyboardContext.keyboardType == .alphabetic else { return layout }
-        var item = layout.createIdealItem(for: .character("!"))
-        item.size.width = .input
-        layout.itemRows.insert(item, after: .space)
+//        guard keyboardContext.keyboardType == .alphabetic else { return layout }
+//        var item = layout.createIdealItem(for: .character("!"))
+//        item.size.width = .input
+//        layout.itemRows.insert(item, after: .space)
         return layout
     }
 }
-
-private extension KeyboardAction {
-
-    var customCalloutActions: [KeyboardAction]? {
-        switch self {
-        case .character(let char): customCalloutAction(for: char)
-        default: nil
-        }
-    }
-
-    func customCalloutAction(for char: String) -> [KeyboardAction]? {
-        guard char.lowercased() == "k" else { return nil }
-        let custom = String("keyboardkit".reversed())
-        return [KeyboardAction].init(characters: custom)
-    }
-}
+//
+//private extension KeyboardAction {
+//
+//    var customCalloutActions: [KeyboardAction]? {
+//        switch self {
+//        case .character(let char): customCalloutAction(for: char)
+//        default: nil
+//        }
+//    }
+//
+//    func customCalloutAction(for char: String) -> [KeyboardAction]? {
+//        guard char.lowercased() == "k" else { return nil }
+//        let custom = String("keyboardkit".reversed())
+//        return [KeyboardAction].init(characters: custom)
+//    }
+//}

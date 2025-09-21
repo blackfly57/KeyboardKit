@@ -49,6 +49,15 @@ class KeyboardViewController: KeyboardInputViewController {
         // keyboardSettings.keyboardDockEdge = .leading
         // keyboardSettings.spaceContextMenuTrailing = .locale
         // keyboardSettings.spaceLongPressBehavior = .moveInputCursor
+        
+        do {
+            services.styleService = try .customThemeBased(
+                keyboardContext: state.keyboardContext,
+                themeContext: state.themeContext
+            )
+        } catch {
+            print(error)
+        }
     }
 
     /// This function is called when the controller needs to
@@ -58,6 +67,8 @@ class KeyboardViewController: KeyboardInputViewController {
         // 💡 Don't call `super.viewWillSetupKeyboardView()`.
         // super.viewWillSetupKeyboardView()
 
+        state.themeContext.currentTheme = KeyboardTheme.aestheticTheme
+        
         // Set up a custom, demo-specific keyboard view.
         setupKeyboardView { controller in
             DemoKeyboardView(

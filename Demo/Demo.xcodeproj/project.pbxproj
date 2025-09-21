@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		376F8F542E7EA6C50029B257 /* AIEmojiCategoryKeyboardMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F8F4E2E7EA6880029B257 /* AIEmojiCategoryKeyboardMenu.swift */; };
+		376F8F552E7EA6D10029B257 /* AIEmojiKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F8F4F2E7EA6880029B257 /* AIEmojiKeyboard.swift */; };
+		376F8F562E7EA6D70029B257 /* EmojiCategoryKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F8F512E7EA6880029B257 /* EmojiCategoryKeyboard.swift */; };
+		376F8F572E7EA6D70029B257 /* AIEmojiKeyboardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F8F502E7EA6880029B257 /* AIEmojiKeyboardItem.swift */; };
+		376F8F582E7EA6D70029B257 /* EmojiCategoryTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F8F522E7EA6880029B257 /* EmojiCategoryTitle.swift */; };
+		376F8F5B2E7EA7EF0029B257 /* KeyboardPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F8F592E7EA79B0029B257 /* KeyboardPreviewView.swift */; };
+		376F8F5D2E7EAB5A0029B257 /* CustomThemeBasedStyleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F8F4B2E7EA6700029B257 /* CustomThemeBasedStyleService.swift */; };
+		376F8F5F2E7EAB5E0029B257 /* KeyboardThemeAesthetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F8F4C2E7EA6700029B257 /* KeyboardThemeAesthetic.swift */; };
 		A9071A262E254CDA0075FB8D /* DemoKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9071A252E254CDA0075FB8D /* DemoKeyboardView.swift */; };
 		A9155CFB2BC450DA008C360F /* fuse.wav in Resources */ = {isa = PBXBuildFile; fileRef = A9155CF92BC450DA008C360F /* fuse.wav */; };
 		A9155D012BC49350008C360F /* fuse.wav in Resources */ = {isa = PBXBuildFile; fileRef = A9155CFF2BC49350008C360F /* fuse.wav */; };
@@ -83,6 +91,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		376F8F4B2E7EA6700029B257 /* CustomThemeBasedStyleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomThemeBasedStyleService.swift; sourceTree = "<group>"; };
+		376F8F4C2E7EA6700029B257 /* KeyboardThemeAesthetic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardThemeAesthetic.swift; sourceTree = "<group>"; };
+		376F8F4E2E7EA6880029B257 /* AIEmojiCategoryKeyboardMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIEmojiCategoryKeyboardMenu.swift; sourceTree = "<group>"; };
+		376F8F4F2E7EA6880029B257 /* AIEmojiKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIEmojiKeyboard.swift; sourceTree = "<group>"; };
+		376F8F502E7EA6880029B257 /* AIEmojiKeyboardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIEmojiKeyboardItem.swift; sourceTree = "<group>"; };
+		376F8F512E7EA6880029B257 /* EmojiCategoryKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCategoryKeyboard.swift; sourceTree = "<group>"; };
+		376F8F522E7EA6880029B257 /* EmojiCategoryTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCategoryTitle.swift; sourceTree = "<group>"; };
+		376F8F592E7EA79B0029B257 /* KeyboardPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPreviewView.swift; sourceTree = "<group>"; };
 		A9071A252E254CDA0075FB8D /* DemoKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoKeyboardView.swift; sourceTree = "<group>"; };
 		A9155CF12BC45081008C360F /* KeyboardKit+Demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KeyboardKit+Demo.swift"; sourceTree = "<group>"; };
 		A9155CF92BC450DA008C360F /* fuse.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fuse.wav; sourceTree = "<group>"; };
@@ -151,6 +167,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		376F8F4D2E7EA6700029B257 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				376F8F4B2E7EA6700029B257 /* CustomThemeBasedStyleService.swift */,
+				376F8F4C2E7EA6700029B257 /* KeyboardThemeAesthetic.swift */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		376F8F532E7EA6880029B257 /* AIEmojiKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				376F8F4E2E7EA6880029B257 /* AIEmojiCategoryKeyboardMenu.swift */,
+				376F8F4F2E7EA6880029B257 /* AIEmojiKeyboard.swift */,
+				376F8F502E7EA6880029B257 /* AIEmojiKeyboardItem.swift */,
+				376F8F512E7EA6880029B257 /* EmojiCategoryKeyboard.swift */,
+				376F8F522E7EA6880029B257 /* EmojiCategoryTitle.swift */,
+			);
+			path = AIEmojiKeyboard;
+			sourceTree = "<group>";
+		};
 		A907FB612788903F003F7EC7 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,7 +207,10 @@
 		A9155CFC2BC450DD008C360F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				376F8F592E7EA79B0029B257 /* KeyboardPreviewView.swift */,
+				376F8F4D2E7EA6700029B257 /* Themes */,
 				A921153D25D58AC7003510D9 /* Info.plist */,
+				376F8F532E7EA6880029B257 /* AIEmojiKeyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -491,9 +531,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				376F8F5B2E7EA7EF0029B257 /* KeyboardPreviewView.swift in Sources */,
+				376F8F562E7EA6D70029B257 /* EmojiCategoryKeyboard.swift in Sources */,
+				376F8F572E7EA6D70029B257 /* AIEmojiKeyboardItem.swift in Sources */,
+				376F8F582E7EA6D70029B257 /* EmojiCategoryTitle.swift in Sources */,
 				A921153C25D58AC7003510D9 /* KeyboardViewController.swift in Sources */,
+				376F8F552E7EA6D10029B257 /* AIEmojiKeyboard.swift in Sources */,
 				A9D6D3A32C7E21D6007D8D6F /* KeyboardApp+Demo.swift in Sources */,
+				376F8F542E7EA6C50029B257 /* AIEmojiCategoryKeyboardMenu.swift in Sources */,
+				376F8F5D2E7EAB5A0029B257 /* CustomThemeBasedStyleService.swift in Sources */,
 				A9071A262E254CDA0075FB8D /* DemoKeyboardView.swift in Sources */,
+				376F8F5F2E7EAB5E0029B257 /* KeyboardThemeAesthetic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

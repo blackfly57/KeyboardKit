@@ -657,23 +657,6 @@ public extension KeyboardStyleService where Self == KeyboardStyle.ThemeBasedStyl
 // MARK: - Themes
 
 /// 👑 This is unlocked by KeyboardKit Pro.
-public struct KeyboardTheme: KeyboardModel {}
-
-/// 👑 This is unlocked by KeyboardKit Pro.
-public class KeyboardThemeContext: ObservableObject {
-    
-    /// 👑 This is unlocked by KeyboardKit Pro.
-    public var settings: KeyboardThemeSettings { .init() }
-}
-
-/// 👑 This is unlocked by KeyboardKit Pro.
-public class KeyboardThemeSettings: ObservableObject {
-
-    /// 👑 This is unlocked by KeyboardKit Pro.
-    public var theme: KeyboardTheme? { nil }
-}
-
-/// 👑 This is unlocked by KeyboardKit Pro.
 public extension KeyboardTheme {
 
     /// 👑 This is unlocked by KeyboardKit Pro.
