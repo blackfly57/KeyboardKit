@@ -31,7 +31,7 @@ public struct KeyboardViewItem<Content: View>: View, KeyboardButtonStyleResolver
     ///   - isNextProbability: The probability (0-1) that the button will be tapped next.
     ///   - isGestureAutoCancellable: Whether an aborted gesture will auto-cancel itself, by default `false`.
     ///   - content: The content view to use within the item.
-    init(
+    public init(
         item: KeyboardLayout.Item,
         actionHandler: KeyboardActionHandler,
         repeatTimer: GestureButtonTimer? = nil,

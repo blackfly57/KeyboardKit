@@ -15,6 +15,7 @@
 		376F8F5B2E7EA7EF0029B257 /* KeyboardPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F8F592E7EA79B0029B257 /* KeyboardPreviewView.swift */; };
 		376F8F5D2E7EAB5A0029B257 /* CustomThemeBasedStyleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F8F4B2E7EA6700029B257 /* CustomThemeBasedStyleService.swift */; };
 		376F8F5F2E7EAB5E0029B257 /* KeyboardThemeAesthetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F8F4C2E7EA6700029B257 /* KeyboardThemeAesthetic.swift */; };
+		377BDD542E800AD60033EDD5 /* KeyboardThemesPreviewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377BDD532E800AD50033EDD5 /* KeyboardThemesPreviewItemView.swift */; };
 		A9071A262E254CDA0075FB8D /* DemoKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9071A252E254CDA0075FB8D /* DemoKeyboardView.swift */; };
 		A9155CFB2BC450DA008C360F /* fuse.wav in Resources */ = {isa = PBXBuildFile; fileRef = A9155CF92BC450DA008C360F /* fuse.wav */; };
 		A9155D012BC49350008C360F /* fuse.wav in Resources */ = {isa = PBXBuildFile; fileRef = A9155CFF2BC49350008C360F /* fuse.wav */; };
@@ -99,6 +100,7 @@
 		376F8F512E7EA6880029B257 /* EmojiCategoryKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCategoryKeyboard.swift; sourceTree = "<group>"; };
 		376F8F522E7EA6880029B257 /* EmojiCategoryTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCategoryTitle.swift; sourceTree = "<group>"; };
 		376F8F592E7EA79B0029B257 /* KeyboardPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPreviewView.swift; sourceTree = "<group>"; };
+		377BDD532E800AD50033EDD5 /* KeyboardThemesPreviewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardThemesPreviewItemView.swift; sourceTree = "<group>"; };
 		A9071A252E254CDA0075FB8D /* DemoKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoKeyboardView.swift; sourceTree = "<group>"; };
 		A9155CF12BC45081008C360F /* KeyboardKit+Demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KeyboardKit+Demo.swift"; sourceTree = "<group>"; };
 		A9155CF92BC450DA008C360F /* fuse.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fuse.wav; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		376F8F4D2E7EA6700029B257 /* Themes */ = {
 			isa = PBXGroup;
 			children = (
+				377BDD532E800AD50033EDD5 /* KeyboardThemesPreviewItemView.swift */,
 				376F8F4B2E7EA6700029B257 /* CustomThemeBasedStyleService.swift */,
 				376F8F4C2E7EA6700029B257 /* KeyboardThemeAesthetic.swift */,
 			);
@@ -532,6 +535,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				376F8F5B2E7EA7EF0029B257 /* KeyboardPreviewView.swift in Sources */,
+				377BDD542E800AD60033EDD5 /* KeyboardThemesPreviewItemView.swift in Sources */,
 				376F8F562E7EA6D70029B257 /* EmojiCategoryKeyboard.swift in Sources */,
 				376F8F572E7EA6D70029B257 /* AIEmojiKeyboardItem.swift in Sources */,
 				376F8F582E7EA6D70029B257 /* EmojiCategoryTitle.swift in Sources */,
